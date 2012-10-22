@@ -7004,14 +7004,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M16" device="LONGPADS"/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C1206" value="4.7uF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R25" library="adafruit" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="R0603" value="330"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1" value="3904"/>
 <part name="Y" library="ozlollc" deviceset="SHF105" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="adafruit" deviceset="EG1218" device="S"/>
+<part name="S1" library="adafruit" deviceset="EG1218" device="S" value="5K"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C1206K" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7026,14 +7026,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="GND3" gate="1" x="81.28" y="17.78"/>
 <instance part="JP1" gate="G$1" x="99.06" y="48.26" rot="R180"/>
 <instance part="SUPPLY3" gate="G$1" x="53.34" y="78.74"/>
-<instance part="C2" gate="G$1" x="88.9" y="86.36" rot="R90"/>
 <instance part="GND4" gate="1" x="104.14" y="86.36" rot="R90"/>
-<instance part="R25" gate="G$1" x="48.26" y="25.4"/>
+<instance part="R2" gate="G$1" x="48.26" y="25.4"/>
 <instance part="T1" gate="G$1" x="58.42" y="25.4"/>
 <instance part="Y" gate="X" x="25.4" y="48.26"/>
 <instance part="SUPPLY4" gate="G$1" x="12.7" y="58.42"/>
 <instance part="GND5" gate="1" x="25.4" y="76.2"/>
 <instance part="S1" gate="1" x="73.66" y="83.82" rot="R90"/>
+<instance part="C1" gate="G$1" x="88.9" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7050,9 +7050,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="JP1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="93.98" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
@@ -7119,17 +7119,17 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="78.74" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
 <junction x="78.74" y="66.04"/>
 <junction x="78.74" y="33.02"/>
 <pinref part="S1" gate="1" pin="P"/>
 <junction x="78.74" y="86.36"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 <wire x1="53.34" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
 </segment>
@@ -7143,7 +7143,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="BACKLIGHT" class="0">
 <segment>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="91"/>
 <label x="17.78" y="25.4" size="1.778" layer="95"/>
 </segment>

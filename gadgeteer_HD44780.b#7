@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -126,14 +126,12 @@
 <wire x1="42" y1="0" x2="42" y2="19" width="0" layer="20"/>
 <wire x1="42" y1="19" x2="0" y2="19" width="0" layer="20"/>
 <wire x1="0" y1="19" x2="0" y2="0" width="0" layer="20"/>
-<circle x="38" y="4" radius="3.53553125" width="0.4064" layer="29"/>
 <text x="28" y="3.5" size="1.778" layer="25">Y</text>
 <text x="12" y="10.5" size="1.016" layer="25">3.3V</text>
 <text x="27" y="10.5" size="1.016" layer="25">5V</text>
 <text x="33.5" y="9.5" size="0.6096" layer="25">LCD
 BRIGHTNESS</text>
-<text x="1" y="10" size="0.8128" layer="25" font="vector">ozlo, llc
-hd44780
+<text x="1" y="10" size="0.8128" layer="25" font="vector">hd44780
 rev 1.0</text>
 </plain>
 <libraries>
@@ -159,13 +157,8 @@ rev 1.0</text>
 </package>
 <package name="GAD_PAC_SMD">
 <wire x1="-2.5" y1="6.2" x2="2.5" y2="6.2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="6.2" x2="2.5" y2="-6.2" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-6.2" x2="-2.5" y2="-6.2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-6.2" x2="-2.5" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.9" x2="-0.5" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-1.9" x2="-0.5" y2="2" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="2" x2="-2.5" y2="6.2" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="-1.9" x2="-0.3" y2="2" width="0.127" layer="21"/>
 <smd name="1" x="-2" y="2.58" dx="0.74" dy="2.6" layer="1" rot="R90"/>
 <smd name="2" x="2" y="2.58" dx="0.74" dy="2.6" layer="1" rot="R90"/>
 <smd name="3" x="-2" y="1.31" dx="0.74" dy="2.6" layer="1" rot="R90"/>
@@ -179,6 +172,10 @@ rev 1.0</text>
 <text x="-2" y="3.3" size="0.6096" layer="21" ratio="12">1</text>
 <text x="-1.94" y="6.85" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
 <text x="-2.54" y="-7.62" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+<wire x1="-2.5" y1="6.2" x2="-2.5" y2="3.3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="6.2" x2="2.5" y2="3.3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-6.2" x2="2.5" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-6.2" x2="-2.5" y2="-3.2" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -237,17 +234,17 @@ chip</description>
 <wire x1="-5.334" y1="-1.524" x2="-5.334" y2="1.524" width="0.127" layer="21"/>
 <wire x1="-5.334" y1="1.524" x2="-5.842" y2="1.524" width="0.127" layer="21"/>
 <wire x1="-5.842" y1="1.524" x2="-5.842" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="25"/>
-<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="25"/>
-<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="25"/>
-<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="25"/>
-<wire x1="-2.032" y1="1.016" x2="-2.032" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="1.016" x2="-1.524" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="51"/>
+<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-2.032" y1="1.016" x2="-2.032" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.127" layer="51"/>
 <pad name="P" x="0" y="0" drill="0.9" diameter="1.6764"/>
 <pad name="O" x="-2.54" y="0" drill="0.9" diameter="1.6764"/>
 <pad name="S" x="2.54" y="0" drill="0.9" diameter="1.6764"/>
@@ -342,7 +339,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="Fusion_eagle_rule_v1.1">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -357,26 +354,28 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
+<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="10mil"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="12mil"/>
+<param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -391,9 +390,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -401,16 +400,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -421,7 +420,7 @@ design rules under a new name.</description>
 <param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -526,7 +525,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="41.27" y="19.81" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="adafruit" package="C1206" value="4.7uF" x="31.5" y="4" rot="R270"/>
-<element name="R25" library="adafruit" package="R0603" value="330" x="10" y="3" rot="R180"/>
+<element name="R25" library="adafruit" package="R0603" value="330" x="10" y="3" smashed="yes" rot="R180">
+<attribute name="NAME" x="12" y="4.5" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.889" y="5.032" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="T1" library="transistor" package="SOT23-BEC" value="3904" x="10" y="8" smashed="yes">
 <attribute name="NAME" x="6.095" y="7.905" size="1.27" layer="25"/>
 <attribute name="VALUE" x="8.095" y="4.825" size="1.27" layer="27"/>
